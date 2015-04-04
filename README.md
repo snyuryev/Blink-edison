@@ -1,8 +1,20 @@
 # Blink-edison
 
-Blink-edison is simple application for Intel Edison and Node.js. Download this application to your Intel Edison device and run it. And you will be able to manipulate your on-board led with requests from web. Also you could download the second part - Blink-swift and install application to your iPhone.
+Blink-edison is simple application for Intel Edison and Node.js. Download this application to your Intel Edison device and run it. And you will be able to manipulate your onboard led with requests from web. Also you could download the [second part - Blink-swift](https://github.com/snyuryev/Blink-swift/) and install application to your iPhone.
 
-You can get access to your onboard led with browser. For example - checking the status.
+Application structure:
+---
+
+* index.js - start point for the application
+* server.js - run server
+* router.js - route incomming requests
+* requestHandlers.js - handle incomming resuests
+* package.json - configuration file
+* Gruntfile.js - allows you to upload your app (and all files) with one click
+
+
+
+You can get access to your onboard led with browser. For example - checking the status. Do not forget to change the local name - mine is "salty.local". 
 
 ```swift
 let kStatusURLString : String = "http://salty.local:8888/status"
@@ -11,12 +23,17 @@ let kStatusURLString : String = "http://salty.local:8888/status"
 It returns JSON with next structure:
 
 ```json
+{
+    "status": "1"
+}
 ```
+
+1 - led is on
+2 - led is off
+
+Next you can change the current state of led with next request:
 
 ```swift
 let kLightURLString : String = "http://salty.local:8888/light"
 ```
 
-
-let kStatusURLString : String = "http://salty.local:8888/status"
-let kLightURLString : String = "http://salty.local:8888/light"
