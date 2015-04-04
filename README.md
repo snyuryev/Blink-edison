@@ -11,6 +11,7 @@ Application structure:
 * requestHandlers.js - handle incomming resuests
 * package.json - configuration file
 * Gruntfile.js - allows you to upload your app (and all files) with one click
+
 ---
 
 You can get access to your onboard led with browser. For example - checking the status. Do not forget to change the local name - mine is "salty.local". 
