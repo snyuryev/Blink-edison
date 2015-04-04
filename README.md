@@ -11,13 +11,12 @@ Application structure:
 * requestHandlers.js - handle incomming resuests
 * package.json - configuration file
 * Gruntfile.js - allows you to upload your app (and all files) with one click
-
-
+---
 
 You can get access to your onboard led with browser. For example - checking the status. Do not forget to change the local name - mine is "salty.local". 
 
 ```swift
-let kStatusURLString : String = "http://salty.local:8888/status"
+http://salty.local:8888/status
 ```
 
 It returns JSON with next structure:
@@ -34,6 +33,6 @@ It returns JSON with next structure:
 Next you can change the current state of led with next request:
 
 ```swift
-let kLightURLString : String = "http://salty.local:8888/light"
+http://salty.local:8888/light
 ```
 
