@@ -2,6 +2,15 @@
 
 Blink-edison is simple application for Intel Edison and Node.js. Download this application to your Intel Edison device and run it. And you will be able to manipulate your onboard led with requests from web. Also you could download the [second part - Blink-swift](https://github.com/snyuryev/Blink-swift/) and install application to your iPhone.
 
+Running
+---
+
+* Prepare your Intel Edison
+* Connect to Intel Edison (for example via ssh)
+* Upload next files: app.js, requestHandlers.js, router.js, server.js, index.js, package.json
+* Run application with command: node index.js
+* Enjoy
+
 Application structure:
 ---
 
