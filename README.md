@@ -36,8 +36,10 @@ It returns JSON with next structure:
 }
 ```
 
+```
 1 - led is on
-2 - led is off
+0 - led is off
+```
 
 Next you can change the current state of led with next request:
 
