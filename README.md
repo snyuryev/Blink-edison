@@ -9,6 +9,7 @@ Application structure:
 * server.js - run server
 * router.js - route incomming requests
 * requestHandlers.js - handle incomming resuests
+* app.js - hardware manipulations via mraa library
 * package.json - configuration file
 * Gruntfile.js - allows you to upload your app (and all files) with one click
 
