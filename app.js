@@ -6,7 +6,6 @@ console.log('MRAA Version: ' + mraa.getVersion());
 var myOnboardLed = new mraa.Gpio(37);
 myOnboardLed.dir(mraa.DIR_OUT);
 
-//var ledState = true;
 var ledState = myOnboardLed.read();
 
 console.log("Led state = " + ledState);
