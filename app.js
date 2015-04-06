@@ -1,14 +1,11 @@
 
 var mraa = require('mraa');
-
-console.log('MRAA Version: ' + mraa.getVersion());
-
-var myOnboardLed = new mraa.Gpio(37);
+var ledState = false;
+var myOnboardLed = new mraa.Gpio(mraa.INTEL_EDISON_GP40);
 myOnboardLed.dir(mraa.DIR_OUT);
 
-var ledState = myOnboardLed.read();
-
-console.log("Led state = " + ledState);
+// turn off at launch
+myOnboardLed.write(ledState?1:0);
 
 function turnOnOff() {
 

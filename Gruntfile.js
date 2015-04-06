@@ -10,7 +10,7 @@ module.exports = function ( grunt ) {
                 username: 'root',
                 password: '12345678'
             },
-            your_target: {
+            salty: {
                 files: [{
                     cwd: '',
                     src: ['app.js', 'requestHandlers.js', 'router.js', 'server.js', 'index.js', 'package.json'],
